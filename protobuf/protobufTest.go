@@ -1,8 +1,9 @@
 package protobuf
 
 import (
+	"example"
 	"log"
-    "example"
+
 	"github.com/golang/protobuf/proto"
 )
 
