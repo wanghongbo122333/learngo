@@ -12,7 +12,7 @@ import (
 	"strings"
 )
 
-func commandRun() {
+func CommandRun() {
 
 	fmt.Println("shell")
 

@@ -1,11 +1,11 @@
-package goRoutine
+package goroutine
 
 import (
 	"fmt"
 	"time"
 )
 
-func goRoutineRun() {
+func GoRoutineRun() {
 	go func() {
 		for {
 			say("hello")

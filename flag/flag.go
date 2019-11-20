@@ -1,6 +1,5 @@
 package flag
 
-
 import (
 	"errors"
 	"flag"
@@ -38,7 +37,7 @@ func init() {
 	flag.Var(&intervalFlag, "deltaT", "comma-separated list of intervals to use between events")
 }
 
-func flagRun() {
+func FlagRun() {
 	flag.Parse()
 	fmt.Println(intervalFlag)
 }
