@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+/*
+	This file gives a demo that deal with asynchronous task
+	you can set a max time for a function.
+	if it can be executed in limit time ,go case 1,otherwise go case 2
+*/
 func TimeRun() {
 
 	// 在这个例子中，假设我们执行了一个外部调用，2秒之后将结果写入c1
@@ -32,6 +37,8 @@ func TimeRun() {
 		time.Sleep(time.Second * 2)
 		c2 <- "result 2"
 	}()
+
+	fmt.Println("执行中间进行其他操作")
 	select {
 	case res := <-c2:
 		fmt.Println(res)
