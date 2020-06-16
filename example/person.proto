@@ -1,5 +1,6 @@
-syntax = "proto3";
 package example;
+syntax = "proto3";
+
 
 message person {    //  aa 会生成 Aa 命名的结构体
     int32 id = 1;

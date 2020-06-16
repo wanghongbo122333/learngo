@@ -20,11 +20,11 @@ type Prom struct {
 	Conf []Config `json:"conf"`
 }
 
-func main() {
-	r := gin.Default()
-	r.GET("/conf", getPrometheusConf)
-	r.Run()
-}
+// func main() {
+// 	r := gin.Default()
+// 	r.GET("/conf", getPrometheusConf)
+// 	r.Run()
+// }
 
 func getPrometheusConf(c *gin.Context) {
 	b, _ := ioutil.ReadFile("prom.json")
