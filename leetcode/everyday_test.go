@@ -1,4 +1,4 @@
-package every
+package leetcode
 
 import "testing"
 
