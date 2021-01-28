@@ -1,7 +1,7 @@
 package protobuf
 
 import (
-	"example"
+	"learngo/example"
 	"log"
 
 	"github.com/golang/protobuf/proto"

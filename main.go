@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package main
 
 import (
@@ -62,3 +63,26 @@ func sumTree(tree []int, start int, end int) int {
 	fmt.Println("sum = ", sum)
 	return sum
 }
+=======
+package main
+
+import (
+	"fmt"
+
+	"learngo/command"
+	"learngo/flag"
+	"learngo/goroutine"
+)
+
+func main() {
+	fmt.Println()
+	// a := ""
+	// var b string
+	// fmt.Println("" == b)//true
+
+	command.CommandRun()
+	flag.FlagRun()
+	goroutine.GoRoutineRun()
+	leetcode.NumJewelsInStones("", "")
+}
+>>>>>>> f2742eea2b288dd6aa99155f5604032337c97b00
